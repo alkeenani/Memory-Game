@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="splach-screen">
+      <h1>Memory Game</h1>
+      <div class="Inputs">
+        <input type="text" placeholder="Please Enter Your Name" />
+        <div>Start Game</div>
+      </div>
+    </div>
+    <div class="info-game">
+      <div class="UserName">Hello : <span></span></div>
+      <div class="countdown-timer"></div>
+
+      <div class="buttons">
+        <button class="new-game">New Game</button>
+        <button class="rest-game">Rest The Game</button>
+      </div>
+      <div class="wrong-number">Wrong Tries : <span>0</span></div>
+    </div>
+    <div class="game-cards">
+      <div class="box" data-technology="css">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/css-3.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="c++">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/c++.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="database">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/database.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="github">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/github.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="html">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/html-5.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="javascript">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/java-script.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="postman">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/postman-icon.ico" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="python">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/python.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="react">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/react.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="sql">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/sql-server.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="css">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/css-3.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="c++">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/c++.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="database">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/database.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="github">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/github.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="html">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/html-5.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="javascript">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/java-script.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="postman">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/postman-icon.ico" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="python">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/python.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="react">
+        <div class="front-card face"></div>
+        <div class="back-card face">
+          <img src="./img/react.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+      <div class="box" data-technology="sql">
+        <div class="front-card face face"></div>
+        <div class="back-card face face">
+          <img src="./img/sql-server.png" alt="This Imge Is Not Found" />
+        </div>
+      </div>
+    </div>
+    <audio id="startGame" src="./src/StartGame.mp3" preload="auto"></audio>
+    <audio id="fail" src="./src/fail.mp3" preload="auto"></audio>
+    <audio id="success" src="./src/success.mp3" preload="auto"></audio>
+    <audio id="Win" src="./src/Victory_Sound.mp4" preload="auto"></audio>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
