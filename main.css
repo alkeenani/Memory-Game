@@ -247,6 +247,66 @@ body {
   }
 }
 
+/*? Rank Board */
+.rank {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.rank > div {
+  background: linear-gradient(145deg, #ffffff, #f0f4ff);
+  border: 2px solid #2196f3;
+  border-radius: 14px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 200px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.rank > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(33, 150, 243, 0.22);
+}
+.rank h2 {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.rank span {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: #fff;
+  font-size: clamp(13px, 2vw, 16px);
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(244, 67, 54, 0.3);
+}
+@media (max-width: 480px) {
+  .rank {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .rank > div {
+    min-width: 150px;
+    padding: 14px 18px;
+    gap: 10px;
+  }
+}
+
 /*? Large Screens */
 @media (min-width: 1400px) {
   .game-cards,
